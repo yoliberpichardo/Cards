@@ -31,7 +31,8 @@ const returnHero = async() => {
         viewCard.innerHTML += `<article>
         <div class="cards-heros" id="cards-heros">
             <div class="icons-container">
-                <i class="fas fa-pen-square"></i>
+                <a href="#"><i class="fas fa-pen-square" id="icon-edit"></i></a>
+                <a href="#"></a>
             </div>
             <div class="card-image mb-1">
             <img src="${info.image}">
