@@ -1,10 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', 'cursive';
+    font-family: 'Belleza', sans-serif;
     
 }
-form{
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+#form-check{
     display: flex;
     margin: 10px;
 }
@@ -17,7 +23,9 @@ input{
 }
 #nav {
     height: 70px;
-    background-color: #8dfa
+    width: 100%;
+    min-width: 480px;
+    background-color: #8dfa;
 }
 
 #title {
@@ -39,9 +47,15 @@ input{
 }
 
 .cards-body{
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    height: 70%;
+    flex-direction: column;
+}
+
+.section-body{
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .cards-heros{
@@ -53,11 +67,13 @@ input{
     width: 225px;
     height: 225px;
 }
+
 .card-image{
     align-items: center;
     height: 65%;
     width: 95%;
 }
+
 .card-data {
     width: 100%;
     margin: .3rem;
@@ -65,10 +81,12 @@ input{
     flex-direction: row;
     align-items:space-between ;
 }
+
 .card-data p{
     text-transform: capitalize;
     margin: 0%;
 }
+
 .card-data h4{
     margin: 0%;
     display: block;
@@ -80,13 +98,38 @@ input{
 }
 
 .ul-card {
-    width: 200px;
+    width: 50%;
     flex-direction: row;
-    justify-content: space-between;
+    max-width: 260px;
+    justify-content: space-around;
+    margin: 0;
     margin-right: 1rem;
 }
 
-.cons-container{
+.form-body{
+    width: 80%;
+    margin: 25px auto;
+}
+
+.input-group{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-group > input{
+    border: 1px solid #6b6b6b;
+    border-radius: 5px !important; 
+}
+.input-group input::placeholder {
+    color: #80808085;
+}
+
+#image{
+    border: none;
+    border-radius: 0 !important;
+    margin-left: 30%;
 }

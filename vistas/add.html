@@ -13,7 +13,7 @@
     <title>Cards Universe</title>
 </head>
 <body>
-    <header >
+    <header>
         <nav class="navbar navbar-light d-flex flex-row justify-content-between"  id="nav">
             <div class="container-title">
                 <h1 class="title "><a href="./index.html" class="text-decoration-none" id="title">Cards Super Hero</a></h1>
@@ -25,13 +25,24 @@
         </nav>
     </header>
     <div class="cards-body">
-        <section class="section-body d-flex " id="section">
-        </section>
+            <form class="form-body">
+                <div class="input-group">
+                    <label for="name">Name</label><input type="text" id="name" name="name" placeholder="Enter the hero">
+                </div>
+                <div class="input-group">
+                    <label for="universe">Universe</label><input type="text" id="universe" name="universe" placeholder="Enter the universe">
+                </div>
+                <div class="input-group">
+                    <label for="image">Image</label><input type="file" id="image" name="image"  accept=".png, .jpg" >
+                </div>
+                <div class="input-group" >
+                    <input type="submit" value="Create card" class="btn btn-primary  w-100 " id="create">
+                </div>
+            </form>
     </div>
     
-
     <script src="https://kit.fontawesome.com/092615c04f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/addCards.js"></script>
 </body>
 </html>
