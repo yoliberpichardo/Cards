@@ -3,6 +3,18 @@ const nameCard = document.getElementById("name");
 const uniCard = document.getElementById("universe");
 const imageCard = document.getElementById("image");
 
+window.addEventListener('load', init, false);
+
+function init() {
+    imageCard.addEventListener('change', mostrarImagen, false);
+}
+
+function mostrarImagen(e) {
+    var img = document.querySelector('#img-view');
+    img.src = imageCard.value;
+}
+
+
 function getBase64FomFile(img){
     let fileReader;
     return new Promise((resolve, reject) => {
@@ -15,10 +27,8 @@ function getBase64FomFile(img){
 }
 
 
-
 sendCard.addEventListener("submit", (e)=>{
     e.preventDefault()
-    
     const func = async (img64) => {
         if(nameCard.value && uniCard.value){
             const returnData = await postCard({
@@ -33,8 +43,8 @@ sendCard.addEventListener("submit", (e)=>{
     }
 
     const convertImg = async () => {
+        
         const base64 = await getBase64FomFile(imageCard.files[0]);
-
         func(base64)
     }
 

@@ -31,8 +31,11 @@ const deleteCard = async (id) => {
 
 window.addEventListener("click", async (e) => {
     if (e.target.dataset.id === "delete"){
-        await deleteCard(e.target.id)
-        location.reload()
+        console.log("ID1",e.target.id);
+        console.log("dataset",e.target.dataset);
+        console.log("ID2",e.target.dataset.id);
+        // await deleteCard(e.target.id)
+        // location.reload()
     }
 })
 

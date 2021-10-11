@@ -63,8 +63,8 @@ input{
     flex-direction: column;
     position: relative;
     margin: 10px;
-    Width: 300px;
-    height: 300px;
+    Width: 250px;
+    height: 320px;
     background-size: 100% 100% !important;
 }
 
